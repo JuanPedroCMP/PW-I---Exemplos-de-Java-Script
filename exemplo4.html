@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+</head>
+
+<body style="background-color: black;color:aliceblue">
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officiis repellendus praesentium ipsum
+        laboriosam quos non sequi necessitatibus repellat delectus ipsa neque eius eligendi corporis iure nulla.
+        Quisquam, laudantium corrupti?</p>
+<label for="cor">Selecione a cor do texto</label>
+    <select onchange="trocarCor()" id="cor">
+        <option value="white">Branco</option>
+        <option value="green">Verde</option>
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <script type="text/javascript">
+        function trocarCor() {
+            let cor = document.querySelector('#cor').value;
+            let texto = document.querySelector('#texto'); 
+
+            texto.style.color = cor;
+        }
+    </script>
+</body>
+
+</html>
